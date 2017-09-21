@@ -12,7 +12,7 @@
   <Date>2017-09-21</Date> 
   <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/joshuaavalon/unraid-docker-template/master/joshuaavalon/cloudflare-ddns.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/joshuaavalon/unraid-docker-template/cloudflare-ddns/master/joshuaavalon/images/cloudflare-ddns.png</Icon>
+  <Icon>https://raw.githubusercontent.com/joshuaavalon/unraid-docker-template/master/joshuaavalon/images/cloudflare-ddns.png</Icon>
   <ExtraParams/>
   <Description>Simple docker using curl to update DNS record on Cloudflare.</Description>
   <Networking>
