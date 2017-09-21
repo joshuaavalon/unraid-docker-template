@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>cloudflare-ddns</Name>
+  <Repository>joshuaavalon/cloudflare-ddns</Repository>
+  <Registry>https://hub.docker.com/r/joshuaavalon/docker-cloudflare/~/dockerfile/</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/joshuaavalon/docker-cloudflare/</Support>
+  <Overview>Simple docker using curl to update DNS record on Cloudflare.</Overview>
+  <Beta>False</Beta>
+  <Category>Network:DNS</Category>
+  <Date>2017-09-21</Date> 
+  <WebUI/>
+  <TemplateURL>https://raw.githubusercontent.com/joshuaavalon/unraid-docker-template/master/joshuaavalon/cloudflare-ddns.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/joshuaavalon/unraid-docker-template/cloudflare-ddns/master/joshuaavalon/images/cloudflare-ddns.png</Icon>
+  <ExtraParams/>
+  <Description>Simple docker using curl to update DNS record on Cloudflare.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data/>
+  <Environment>
+    <Variable>
+      <Value></Value>
+      <Name>ZONE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value></Value>
+      <Name>HOST</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value></Value>
+      <Name>API</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value></Value>
+      <Name>EMAIL</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>1</Value>
+      <Name>TTL</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>true</Value>
+      <Name>PROXY</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Config Name="Zone" Target="ZONE" Default="" Mode="" Description="Domain" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Host" Target="HOST" Default="" Mode="" Description="DNS record" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Email" Target="EMAIL" Default="" Mode="" Description="Cloudflare Email" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Api" Target="API" Default="" Mode="" Description="Cloudflare API key" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="ttl" Target="TTL" Default="" Mode="" Description="Time to live for DNS record. Value of 1 is 'automatic'. Min value:1; Max value:2147483647." Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+  <Config Name="Proxy" Target="PROXY" Default="" Mode="" Description="Whether the record is receiving the performance and security benefits of Cloudflare." Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+</Container>
