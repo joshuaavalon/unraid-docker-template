@@ -55,7 +55,7 @@
   <Config Name="Zone" Target="ZONE" Default="" Mode="" Description="Domain" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Host" Target="HOST" Default="" Mode="" Description="DNS record" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Email" Target="EMAIL" Default="" Mode="" Description="Cloudflare Email" Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="Api" Target="API" Default="" Mode="" Description="Cloudflare API key" Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="ttl" Target="TTL" Default="" Mode="" Description="Time to live for DNS record. Value of 1 is 'automatic'. Min value:1; Max value:2147483647." Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+  <Config Name="API" Target="API" Default="" Mode="" Description="Cloudflare API key" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="TTL" Target="TTL" Default="" Mode="" Description="Time to live for DNS record. Value of 1 is 'automatic'. Min value:1; Max value:2147483647." Type="Variable" Display="always" Required="false" Mask="false">1</Config>
   <Config Name="Proxy" Target="PROXY" Default="" Mode="" Description="Whether the record is receiving the performance and security benefits of Cloudflare." Type="Variable" Display="always" Required="false" Mask="false">true</Config>
 </Container>
